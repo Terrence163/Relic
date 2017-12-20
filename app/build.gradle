@@ -25,7 +25,7 @@ dependencies {
     api 'com.android.support:design:26.1.0'
 // 开源项目CircleImageView，可以轻松实现图片圆形的功能
     api 'de.hdodenhof:circleimageview:2.2.0'
-    api 'org.litepal.android:core:1.6.0'
+    api 'org.litepal.android:core:1.6.1'
 //OkHttp 用于进行网络请求
     compile group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.9.0'
 

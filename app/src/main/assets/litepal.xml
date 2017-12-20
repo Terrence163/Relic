@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<litepal>
+    <dbname value="relic_db"></dbname>
+    <version value="1"></version>
+    <list>
+        <mapping class="com.relic.android.db.Main"></mapping>
+        <mapping class="com.relic.android.db.Login"></mapping>
+        <mapping class="com.relic.android.db.Item"></mapping>
+        <mapping class="com.relic.android.db.Type"></mapping>
+        <mapping class="com.relic.android.db.User"></mapping>
+    </list>
+</litepal>
