@@ -5,7 +5,7 @@ import org.litepal.crud.DataSupport;
 import java.sql.Date;
 
 /**
- * Created by 陶士超 on 2017/12/20.
+ * Created by Terrence on 2017/12/20.
  */
 
 public class Main extends DataSupport {

@@ -3,7 +3,7 @@ package com.relic.android.db;
 import org.litepal.crud.DataSupport;
 
 /**
- * Created by 陶士超 on 2017/12/20.
+ * Created by Terrence on 2017/12/20.
  */
 
 public class Item extends DataSupport {

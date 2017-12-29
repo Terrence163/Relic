@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 控制所有的Activity
- * Created by 陶士超 on 2017/12/18.
+ * Created by Terrence on 2017/12/18.
  */
 
 public class ActivityCollector {

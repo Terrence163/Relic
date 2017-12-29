@@ -7,7 +7,8 @@ import org.litepal.LitePal;
 import org.litepal.LitePalApplication;
 
 /**
- * Created by 陶士超 on 2017/12/18.
+ * 继承Application类
+ * Created by Terrence on 2017/12/18.
  */
 
 public class MyApplication extends Application{

@@ -3,7 +3,8 @@ package com.relic.android.util;
 import android.util.Log;
 
 /**
- * Created by 陶士超 on 2017/12/18.
+ * 日记工具类
+ * Created by Terrence on 2017/12/18.
  */
 
 public class LogUtil {

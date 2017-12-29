@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import com.relic.android.R;
 
+/**
+ *  Created by Terrence on 2017/12/18.
+ */
 public class MainActivity extends BaseActivity {
 
     @Override
