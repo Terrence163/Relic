@@ -15,4 +15,30 @@
         completions."
     </string>
     <string name="title_activity_login">登 录</string>
+
+
+    <string name="text_inside_circle_button_text_normal">Text Inside Circle Button(Normal)</string>
+    <string name="text_inside_circle_button_text_highlighted">Text Inside Circle Button(Highlighted)</string>
+    <string name="text_inside_circle_button_text_unable">Text Inside Circle Button(Unable)</string>
+
+    <string name="text_outside_circle_button_text_normal">Text Outside Circle Button(Normal)</string>
+    <string name="text_outside_circle_button_text_highlighted">Text Outside Circle Button(Highlighted)</string>
+    <string name="text_outside_circle_button_text_unable">Text Outside Circle Button(Unable)</string>
+
+    <string name="text_ham_button_text_normal">添加</string>
+    <string name="text_ham_button_text_highlighted">Ham Button Text(Highlighted)</string>
+    <string name="text_ham_button_text_unable">Ham Button Text(Unable)</string>
+    <string name="text_ham_button_sub_text_normal">打开一个新的activity</string>
+    <string name="text_ham_button_sub_text_highlighted">Ham Button Sub Text(Highlighted)</string>
+    <string name="text_ham_button_sub_text_unable">Ham Button Sub Text(Unable)</string>
+
+
+
+    <!--下面是AddActivity要用到的string内容-->
+    <string name="addactivit_title">添加</string>
+    <string name="addactivity_text_1">添加主标题:</string>
+    <string name="addactivity_text_2">所属标签:</string>
+    <string name="addactivity_edit_text_hint_1">此处填写主标题内容</string>
+    <string name="addactivity_edit_text_hint_2">可编辑下拉框</string>
+    <string name="addactivity_button_1">确定添加</string>
 </resources>

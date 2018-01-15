@@ -7,7 +7,16 @@ import org.litepal.crud.DataSupport;
  */
 
 public class Type extends DataSupport {
+    private Main mMain;
     private String name;
+
+    public Main getMain() {
+        return mMain;
+    }
+
+    public void setMain(Main main) {
+        mMain = main;
+    }
 
     public String getName() {
         return name;

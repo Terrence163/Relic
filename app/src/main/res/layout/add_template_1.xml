@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1_add_template_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et1_add_template_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv1_add_template_1"
+        app:layout_constraintTop_toBottomOf="@id/tv1_add_template_1"/>
+    <TextView
+        android:id="@+id/tv2_add_template_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@id/et1_add_template_1"
+        app:layout_constraintLeft_toLeftOf="@id/et1_add_template_1"
+        />
+    <EditText
+        android:id="@+id/et2_add_template_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="25dp"
+        android:drawableRight="@drawable/ic_unflod"
+        app:layout_constraintLeft_toLeftOf="@id/tv2_add_template_1"
+        app:layout_constraintTop_toBottomOf="@id/tv2_add_template_1"/>
+    <Button
+        android:id="@+id/button1_add_template_1"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="@id/et2_add_template_1"
+        app:layout_constraintTop_toBottomOf="@id/et2_add_template_1"
+        />
+
+</android.support.constraint.ConstraintLayout>

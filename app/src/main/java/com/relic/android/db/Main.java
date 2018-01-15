@@ -2,7 +2,8 @@ package com.relic.android.db;
 
 import org.litepal.crud.DataSupport;
 
-import java.sql.Date;
+
+
 
 /**
  * Created by Terrence on 2017/12/20.
@@ -11,12 +12,30 @@ import java.sql.Date;
 public class Main extends DataSupport {
     private String title;
     private String context;
-    private Date pubData;
+    private String pubDateTime;
     private boolean upload;
     private boolean status;
-    private Type mType;
-    private User mUser;
+    private Item mItem;
+    private int type_id;
+
+    public int getType_id() {
+        return type_id;
+    }
+
+    public void setType_id(int type_id) {
+        this.type_id = type_id;
+    }
+
+    //    等级
     private int rank;
+
+    public Item getItem() {
+        return mItem;
+    }
+
+    public void setItem(Item item) {
+        mItem = item;
+    }
 
     public int getRank() {
         return rank;
@@ -24,14 +43,6 @@ public class Main extends DataSupport {
 
     public void setRank(int rank) {
         this.rank = rank;
-    }
-
-    public User getUser() {
-        return mUser;
-    }
-
-    public void setUser(User user) {
-        mUser = user;
     }
 
     public String getTitle() {
@@ -50,12 +61,12 @@ public class Main extends DataSupport {
         this.context = context;
     }
 
-    public Date getPubData() {
-        return pubData;
+    public String getPubDateTime() {
+        return pubDateTime;
     }
 
-    public void setPubData(Date pubData) {
-        this.pubData = pubData;
+    public void setPubDateTime(String pubDateTime) {
+        this.pubDateTime = pubDateTime;
     }
 
     public boolean isUpload() {
@@ -74,11 +85,4 @@ public class Main extends DataSupport {
         this.status = status;
     }
 
-    public Type getType() {
-        return mType;
-    }
-
-    public void setType(Type type) {
-        mType = type;
-    }
 }

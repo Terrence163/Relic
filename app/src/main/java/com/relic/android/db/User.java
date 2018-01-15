@@ -8,8 +8,26 @@ import org.litepal.crud.DataSupport;
 
 public class User extends DataSupport {
     private String name;
+//  头像
     private String headPortrait;
     private boolean status;
+    private Main mMain;
+    private Login mLogin;
+    public Main getMain() {
+        return mMain;
+    }
+
+    public void setMain(Main main) {
+        mMain = main;
+    }
+
+    public Login getLogin() {
+        return mLogin;
+    }
+
+    public void setLogin(Login login) {
+        mLogin = login;
+    }
 
     public String getName() {
         return name;

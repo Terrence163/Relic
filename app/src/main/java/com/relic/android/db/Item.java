@@ -9,7 +9,6 @@ import org.litepal.crud.DataSupport;
 public class Item extends DataSupport {
     private String titleItem;
     private String context;
-    private Main mMain;
     private boolean upload;
 
     public String getTitleItem() {
@@ -26,14 +25,6 @@ public class Item extends DataSupport {
 
     public void setContext(String context) {
         this.context = context;
-    }
-
-    public Main getMain() {
-        return mMain;
-    }
-
-    public void setMain(Main main) {
-        mMain = main;
     }
 
     public boolean isUpload() {

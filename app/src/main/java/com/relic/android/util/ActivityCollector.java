@@ -12,15 +12,26 @@ import java.util.List;
 
 public class ActivityCollector {
     public static List<Activity> sActivities = new ArrayList<>();
-//添加所给的Activity
+
+    /**
+     * 添加Activity的子类指定的实例到静态变量sActivities中
+     * @param activity
+     */
     public static void addActivity(Activity activity){
         sActivities.add(activity);
     }
-//移除指定的Activity
+
+    /**
+     * 从静态变量sActivities中移除Activity的子类指定的实例
+     * @param activity
+     */
     public static void removeActivity(Activity activity) {
         sActivities.add(activity);
     }
-//终止所有Activity
+
+    /**
+     * 从静态变量sActivities删除所有的Activity的
+     */
     public static void finishAll(){
         for(Activity activity : sActivities) {
             if(!activity.isFinishing()){

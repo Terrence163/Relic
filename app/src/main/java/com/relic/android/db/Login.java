@@ -1,5 +1,6 @@
 package com.relic.android.db;
 
+import org.litepal.annotation.Column;
 import org.litepal.annotation.Encrypt;
 import org.litepal.crud.DataSupport;
 
@@ -8,18 +9,10 @@ import org.litepal.crud.DataSupport;
  */
 
 public class Login extends DataSupport {
-    private User mUser;
+    @Column(unique = true)
     private String email;
     @Encrypt(algorithm = AES)
     private String password;
-
-    public User getUser() {
-        return mUser;
-    }
-
-    public void setUser(User user) {
-        mUser = user;
-    }
 
     public String getEmail() {
         return email;
