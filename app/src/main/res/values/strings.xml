@@ -16,22 +16,11 @@
     </string>
     <string name="title_activity_login">登 录</string>
 
-
-    <string name="text_inside_circle_button_text_normal">Text Inside Circle Button(Normal)</string>
-    <string name="text_inside_circle_button_text_highlighted">Text Inside Circle Button(Highlighted)</string>
-    <string name="text_inside_circle_button_text_unable">Text Inside Circle Button(Unable)</string>
-
-    <string name="text_outside_circle_button_text_normal">Text Outside Circle Button(Normal)</string>
-    <string name="text_outside_circle_button_text_highlighted">Text Outside Circle Button(Highlighted)</string>
-    <string name="text_outside_circle_button_text_unable">Text Outside Circle Button(Unable)</string>
-
-    <string name="text_ham_button_text_normal">添加</string>
-    <string name="text_ham_button_text_highlighted">Ham Button Text(Highlighted)</string>
-    <string name="text_ham_button_text_unable">Ham Button Text(Unable)</string>
-    <string name="text_ham_button_sub_text_normal">打开一个新的activity</string>
-    <string name="text_ham_button_sub_text_highlighted">Ham Button Sub Text(Highlighted)</string>
-    <string name="text_ham_button_sub_text_unable">Ham Button Sub Text(Unable)</string>
-
+<!--下面是BoomMenuButton要用到的string内容-->
+    <string name="text_menu_title_0">添加</string>
+    <string name="text_menu_sub_title_0">运行AddActivity</string>
+    <string name="text_menu_title_1">切换模式</string>
+    <string name="text_menu_sub_title_1">运行XXXActivity</string>
 
 
     <!--下面是AddActivity要用到的string内容-->

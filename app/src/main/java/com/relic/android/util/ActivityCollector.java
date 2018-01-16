@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ActivityCollector {
     public static List<Activity> sActivities = new ArrayList<>();
-
+    private static final String TAG = "ActivityCollector";
     /**
      * 添加Activity的子类指定的实例到静态变量sActivities中
      * @param activity
@@ -26,7 +26,7 @@ public class ActivityCollector {
      * @param activity
      */
     public static void removeActivity(Activity activity) {
-        sActivities.add(activity);
+        sActivities.remove(activity);
     }
 
     /**
@@ -38,5 +38,15 @@ public class ActivityCollector {
                 activity.finish();
             }
         }
+    }
+
+    public static Activity getActivity(String activityName){
+        for (Activity a: sActivities) {
+            if(a.getLocalClassName().equals(activityName)){
+                LogUtil.i(TAG, "getActivity: OK");
+                return a;
+            }
+        }
+        return null;
     }
 }

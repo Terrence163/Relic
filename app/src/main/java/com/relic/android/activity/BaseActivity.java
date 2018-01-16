@@ -18,13 +18,14 @@ public class BaseActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        LogUtil.d(TAG,"进入"+ getClass().getSimpleName());
+        LogUtil.d(TAG,"onCreate:"+ getClass().getSimpleName());
         ActivityCollector.addActivity(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        LogUtil.d(TAG, "onDestroy: "+getClass().getSimpleName());
         ActivityCollector.removeActivity(this);
     }
 }

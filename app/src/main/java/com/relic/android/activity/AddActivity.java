@@ -1,5 +1,6 @@
 package com.relic.android.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.ListPopupWindow;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.relic.android.R;
+import com.relic.android.util.ActivityCollector;
 
 public class AddActivity extends BaseActivity {
 
@@ -31,8 +33,11 @@ public class AddActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
-
         init();
+        Activity activity = ActivityCollector.getActivity("activity.MainActivity");
+        if( activity != null){
+            activity.finish();
+        }
     }
 
     /**
@@ -87,6 +92,9 @@ public class AddActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(AddActivity.this, "点击事件正常", Toast.LENGTH_SHORT).show();
+                Intent intent =  new Intent(AddActivity.this,MainActivity.class);
+                startActivity(intent);
+
             }
         });
     }

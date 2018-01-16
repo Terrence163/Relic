@@ -36,7 +36,7 @@
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"/>
-
+                    <!---->
                 <com.nightonke.boommenu.BoomMenuButton
                     android:id="@+id/boom"
                     android:layout_width="wrap_content"
@@ -45,9 +45,9 @@
                     android:layout_alignParentRight="true"
                     app:bmb_backgroundEffect="false"
                     app:bmb_boomEnum="boomParabola_4"
-                    app:bmb_buttonPlaceEnum="buttonPlace_ham_1"
+                    app:bmb_buttonPlaceEnum="buttonPlace_ham_2"
                     app:bmb_hideDuration="200"
-                    app:bmb_piecePlaceEnum="piecePlace_ham_1"
+                    app:bmb_piecePlaceEnum="piecePlace_ham_2"
                     app:bmb_showDuration="200"/>
             </RelativeLayout>
         </android.support.v7.widget.Toolbar>

@@ -62,20 +62,25 @@ public class MainActivity extends BaseActivity {
         mBoomMenuButton = (BoomMenuButton) findViewById(R.id.boom);
         assert mBoomMenuButton != null;
         mBoomMenuButton.setButtonEnum(ButtonEnum.Ham);
+//        TODO BoomMenuButton 代码还不完善
         for (int i = 0; i < mBoomMenuButton.getButtonPlaceEnum().buttonNumber(); i++){
-            mBoomMenuButton.addBuilder(new HamButton.Builder().normalImageRes(getImageResource(i))
-                    .normalTextRes(R.string.text_ham_button_text_normal)
-                    .subNormalTextRes(R.string.text_ham_button_sub_text_normal)
-                    .pieceColor(Color.WHITE).listener(new OnBMClickListener() {
-                @Override
-                public void onBoomButtonClick(int index) {
-                    Toast.makeText(MyApplication.getContext(), "点击事件成功"+index, Toast.LENGTH_SHORT).show();
-                    if(index==0){
-                        Intent intent = new Intent(MainActivity.this,AddActivity.class);
-                        startActivity(intent);
-                    }
-                }
-            }));
+                mBoomMenuButton.addBuilder(
+                        new HamButton.Builder().normalImageRes(getImageResource(i))
+                        .normalTextRes(getTitleResource(i))
+                        .subNormalTextRes(getSubTitleResource(i))
+                        .pieceColor(Color.WHITE).listener(new OnBMClickListener() {
+                            @Override
+                            public void onBoomButtonClick(int index) {
+                                if (index == 0) {
+                                    Intent intent = new Intent(MainActivity.this, AddActivity.class);
+                                    startActivity(intent);
+                                }
+                                if (index == 1) {
+                                    Toast.makeText(MainActivity.this, "BoomMenuButton_1", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        }));
+
         }
 
 
@@ -122,12 +127,24 @@ public class MainActivity extends BaseActivity {
             }
         });
     }
-    
-    private  int[] imageResources = new int[]{
-            R.drawable.ic_add,
+//    对一些类进行了修改并添加了图片等等
+    private static int[] imageResources = new int[]{
+            R.drawable.ic_add,R.drawable.ic_mode_switch
     };
-     private int getImageResource(int i) {
+     private static int getImageResource(int i) {
         return imageResources[i];
+    }
+    private static int[] titleResources = new int[]{
+             R.string.text_menu_title_0,R.string.text_menu_title_1
+    };
+     private static int getTitleResource(int i){
+         return titleResources[i];
+    }
+    private static int[] subTitleResources = new int[]{
+            R.string.text_menu_sub_title_0,R.string.text_menu_sub_title_1
+    };
+    private static int getSubTitleResource(int i){
+        return subTitleResources[i];
     }
 
 }
